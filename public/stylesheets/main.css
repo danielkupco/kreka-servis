@@ -1,14 +1,18 @@
 .jumbotron {
-  background: #532f8c;
+  /* background: #532f8c; */
+  background-image: url("../images/black_car.jpg");
+  background-size: cover;
   color: white;
-  padding-bottom: 80px;
+  /* padding-bottom: 80px; */
 }
 .jumbotron .btn-primary {
   background: #845ac7;
+  /* background-image: url("../images/black_car.jpg"); */
   border-color: #845ac7;
 }
 .jumbotron .btn-primary:hover {
   background: #7646c1;
+  /* background-image: url("../images/black_car.jpg"); */
 }
 .jumbotron p {
   color: #d9ccee;
@@ -20,11 +24,11 @@
 }
 .jumbotron .lang-logo {
   display: block;
-  background: #b01302;
+  background: white;
   border-radius: 50%;
   overflow: hidden;
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   margin: auto;
   border: 2px solid white;
 }
