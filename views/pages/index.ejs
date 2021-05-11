@@ -6,9 +6,6 @@
 </head>
 
 <body>
-
-  <!-- <%- include ("../partials/nav.ejs") %> -->
-
   <div class="jumbotron text-center">
     <div class="container">
       <a href="/" class="lang-logo">
@@ -20,10 +17,7 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-4 col-md-4">
-        <h3>
-          <span class="glyphicon glyphicon-search"></span> Pregled
-          <!-- <button id="close-preview" class="btn btn-danger glyphicon glyphicon-remove-sign" type="button">Zatvori pregled</button> -->
-        </h3>
+        <h3><span class="glyphicon glyphicon-search"></span> Pregled</h3>
         <div id="pdf-preview" class="pdf-preview">
           <div class="row">
             <img src="/images/kreka-servis.jpg" class="col-sm-4 col-sm-offset-4 col-md-4 col-md-offset-4">
@@ -31,8 +25,7 @@
           <table>
             <tbody>
               <tr>
-                <td>Datum: <%= moment().format('DD.MM.yyyy.'); %>
-                </td>
+                <td>Datum: <span id="datum"><%= moment().format('DD.MM.yyyy.'); %></span></td>
                 <td>Kilometri: <span id="kilometri"></span></td>
               </tr>
               <tr>
@@ -63,6 +56,12 @@
           </div>
         </h3>
         <div class="inputs">
+          <div class="input-group">
+            <input id="datetimepicker" type="text" class="form-control">
+            <span id="btn-calendar" class="input-group-btn glyphicon glyphicon-calendar">
+              <button class="btn btn-default glyphicon glyphicon-calendar" type="button"></button>
+            </span>
+          </div><!-- /input-group -->
           <input id="input-kilometri" type="text" class="form-control" placeholder="Unesi kilometre...">
           <div class="input-group">
             <input type="text" class="form-control deo" placeholder="Unesi deo...">

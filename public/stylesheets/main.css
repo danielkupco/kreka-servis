@@ -7,12 +7,10 @@
 }
 .jumbotron .btn-primary {
   background: #845ac7;
-  /* background-image: url("../images/black_car.jpg"); */
   border-color: #845ac7;
 }
 .jumbotron .btn-primary:hover {
   background: #7646c1;
-  /* background-image: url("../images/black_car.jpg"); */
 }
 .jumbotron p {
   color: #d9ccee;
