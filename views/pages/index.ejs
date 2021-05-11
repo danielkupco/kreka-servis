@@ -19,43 +19,45 @@
   </div>
   <div class="container">
     <div class="row">
-      <div id="pdf-preview" class="col-md-4 pdf-preview">
+      <div class="col-md-4">
         <h3>
-          <span class="glyphicon glyphicon-zoom-out"></span> Pregled
+          <span class="glyphicon glyphicon-search"></span> Pregled
           <!-- <button id="close-preview" class="btn btn-danger glyphicon glyphicon-remove-sign" type="button">Zatvori pregled</button> -->
         </h3>
-        <div class="row">
-          <img src="/images/kreka-servis.jpg" class="col-md-4 col-md-offset-4">
+        <div id="pdf-preview" class="pdf-preview">
+          <div class="row">
+            <img src="/images/kreka-servis.jpg" class="col-md-4 col-md-offset-4">
+          </div>
+          <table>
+            <tbody>
+              <tr>
+                <td>Datum: <%= moment().format('DD.MM.yyyy.'); %>
+                </td>
+                <td>Kilometri: <span id="kilometri"></span></td>
+              </tr>
+              <tr>
+                <td colspan="2" class="text-center">Promenjeni delovi: </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <ul class="delovi">
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div id="potpis"></div>
         </div>
-        <table>
-          <tbody>
-            <tr>
-              <td>Datum: <%= moment().format('DD.MM.yyyy.'); %>
-              </td>
-              <td>Kilometri: <span id="kilometri"></span></td>
-            </tr>
-            <tr>
-              <td colspan="2" class="text-center">Promenjeni delovi: </td>
-            </tr>
-            <tr>
-              <td colspan="2">
-                <ul class="delovi">
-                </ul>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-        <div id="potpis"></div>
       </div>
 
       <div class="col-md-8 pdf-form">
-        <h3><span class="glyphicon glyphicon-file"></span> Popuni formu
+        <h3><span class="glyphicon glyphicon-pencil"></span> Popuni formu
           <a id="btn-save2pdf" type="button" class="btn btn-lg btn-primary float-right"><span
               class="glyphicon glyphicon-download"></span>
-            Sacuvaj PDF</a>
+            Sačuvaj PDF</a>
           <a id="btn-refresh" type="button" class="btn btn-lg btn-success float-right"><span
               class="glyphicon glyphicon-refresh"></span>
-            Osvezi</a>
+            Osveži</a>
         </h3>
         <div class="inputs">
           <input id="input-kilometri" type="text" class="form-control" placeholder="Unesi kilometre...">
@@ -66,7 +68,7 @@
             </span>
           </div><!-- /input-group -->
         </div>
-        <button class="btn btn-primary dodaj-deo" type="button">Dodaj</button>
+        <button class="btn btn-primary dodaj-deo" type="button">Dodaj deo</button>
       </div>
     </div> <!-- row -->
   </div>

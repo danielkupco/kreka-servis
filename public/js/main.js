@@ -63,10 +63,10 @@ $(document).ready(function () {
     const element = document.getElementById("pdf-preview");
 
     var opt = {
-      margin:       [1, 2, 0, 0], // [top, left, bottom, right],
+      margin:       [0.5, 1, 0.5, 1], // [top, left, bottom, right],
       filename:     'myfile.pdf',
       image:        { type: 'jpeg', quality: 0.98 },
-      html2canvas:  { scale: 4, with: 600, height: 800 },
+      html2canvas:  { scale: 4 }, //, with: 600, height: 800 },
       jsPDF:        { unit: 'in', format: 'a4', orientation: 'portrait' }
     };
      
