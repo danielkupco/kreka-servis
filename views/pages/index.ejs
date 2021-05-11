@@ -19,14 +19,14 @@
   </div>
   <div class="container">
     <div class="row">
-      <div class="col-md-4">
+      <div class="col-sm-4 col-md-4">
         <h3>
           <span class="glyphicon glyphicon-search"></span> Pregled
           <!-- <button id="close-preview" class="btn btn-danger glyphicon glyphicon-remove-sign" type="button">Zatvori pregled</button> -->
         </h3>
         <div id="pdf-preview" class="pdf-preview">
           <div class="row">
-            <img src="/images/kreka-servis.jpg" class="col-md-4 col-md-offset-4">
+            <img src="/images/kreka-servis.jpg" class="col-sm-4 col-sm-offset-4 col-md-4 col-md-offset-4">
           </div>
           <table>
             <tbody>
@@ -50,14 +50,17 @@
         </div>
       </div>
 
-      <div class="col-md-8 pdf-form">
-        <h3><span class="glyphicon glyphicon-pencil"></span> Popuni formu
-          <a id="btn-save2pdf" type="button" class="btn btn-lg btn-primary float-right"><span
-              class="glyphicon glyphicon-download"></span>
-            Sačuvaj PDF</a>
-          <a id="btn-refresh" type="button" class="btn btn-lg btn-success float-right"><span
-              class="glyphicon glyphicon-refresh"></span>
-            Osveži</a>
+      <div class="col-sm-8 col-md-8 pdf-form">
+        
+        <h3><span class="glyphicon glyphicon-pencil"></span> Popuni
+          <div id="form-buttons">
+            <a id="btn-save2pdf" type="button" class="btn btn-lg btn-primary float-right"><span
+                class="glyphicon glyphicon-download"></span>
+              Sačuvaj PDF</a>
+            <a id="btn-refresh" type="button" class="btn btn-lg btn-success float-right"><span
+                class="glyphicon glyphicon-refresh"></span>
+              Osveži</a>
+          </div>
         </h3>
         <div class="inputs">
           <input id="input-kilometri" type="text" class="form-control" placeholder="Unesi kilometre...">

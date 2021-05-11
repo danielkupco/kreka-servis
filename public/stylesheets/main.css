@@ -63,3 +63,11 @@
 .pdf-form input, .pdf-form button {
   margin-top: 1em;
 }
+
+#form-buttons {
+  float: right;
+}
+
+div.inputs {
+  margin-top: 2em;
+}
