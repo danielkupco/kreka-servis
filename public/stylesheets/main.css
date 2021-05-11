@@ -39,6 +39,7 @@
 }
 #pdf-preview table {
   width: -webkit-fill-available;
+  border: 2px solid black;
 }
 #pdf-preview table td {
   border: 1px solid black;
@@ -46,7 +47,7 @@
   width: 50%;
 }
 #potpis {
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid black;
   width: 50%;
   float: right;
   margin-top: 5em;
@@ -72,4 +73,12 @@
 
 div.inputs {
   margin-top: 2em;
+}
+
+span.input-group-btn button {
+  top: auto;
+}
+
+#btn-calendar button {
+  top: -1px;
 }

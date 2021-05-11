@@ -5,6 +5,7 @@ $(document).ready(function () {
     timepicker: false,
     todayButton: true,
     dayOfWeekStart: 1, // Mon first in week
+    scrollInput: false,
     onSelectDate:function () {
       $('#datum').text($('#datetimepicker').val()); // default is today
     }
