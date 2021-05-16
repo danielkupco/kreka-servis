@@ -82,3 +82,21 @@ span.input-group-btn button {
 #btn-calendar button {
   top: -1px;
 }
+
+#title {
+  font-family: "Sylfaen", serif;
+}
+
+#created-by {
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
+  font-family: "Great Vibes", cursive;
+  font-style: italic;
+  color: black;
+}
+
+#signature {
+  font-family: "Great Vibes", cursive;
+  font-style: italic;
+}
